@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core'
 })
 export class ErrorDisplayComponent {
   @Input() messages: string[] = []
+
+  clearMessages(): void {
+    this.messages = []
+  }
 }
