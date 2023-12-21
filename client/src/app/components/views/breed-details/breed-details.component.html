@@ -1,0 +1,21 @@
+<div class="container">
+  <app-nav></app-nav>
+  <div class="section-container">
+    <div class="border-container">
+      <div class="breed-container" *ngIf="breed">
+        <h2>Breed details</h2>
+        <p>{{ breed.name }}</p>
+        <p>{{ breed.averageAge }}</p>
+      </div>
+    </div>
+    <div class="dogs-related">
+      <div class="assignee-title">Dogs assigned</div>
+      <div class="dog-container">
+        <div *ngFor="let dog of dogsRelated" class="dog">
+          <p>{{ dog.name }}</p>
+          <p>{{ dog.age }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

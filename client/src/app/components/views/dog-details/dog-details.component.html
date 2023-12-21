@@ -1,0 +1,11 @@
+<div class="container">
+  <app-nav></app-nav>
+  <div class="border-container">
+    <div class="dog-container" *ngIf="dog && breedName">
+      <h2>Dog details</h2>
+      <p>{{ dog.name }}</p>
+      <p>{{ dog.age }}</p>
+      <p>{{ breedName }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <app-nav></app-nav>
+  <app-dog-edit-form
+    [dog]="dog"
+    [breedName]="breedName"
+    (errorMessagesChange)="onErrorMessagesChange($event)"
+  ></app-dog-edit-form>
+  <app-error-display [messages]="errorMessages"></app-error-display>
+</div>

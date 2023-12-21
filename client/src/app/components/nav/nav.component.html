@@ -1,0 +1,15 @@
+<nav>
+  <fa-icon [icon]="leafIcon" class="icon"></fa-icon>
+  <a routerLink="/" routerLinkActive="active">Breeds</a>
+  <a routerLink="/dogs" routerLinkActive="active">Dogs</a>
+
+  <div class="migration-button">
+    Migration ⤵
+    <ul>
+      <li (click)="initBreeds()">Add Breeds</li>
+      <li (click)="removeBreeds()">Remove Breeds</li>
+      <li (click)="initDogs()">Add Dogs</li>
+      <li (click)="removeDogs()">Remove Dogs</li>
+    </ul>
+  </div>
+</nav>

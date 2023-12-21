@@ -1,0 +1,10 @@
+<div class="form-container">
+  <form [formGroup]="applyForm" (submit)="submitForm()">
+    <p>Add new Dog to the collection!</p>
+    <input id="name" type="text" formControlName="name" placeholder="Name" autocomplete="off" />
+    <input id="age" type="text" formControlName="age" placeholder="Age" autocomplete="off" />
+    <input id="breed" type="text" placeholder="Breed" formControlName="breed" autocomplete="off" />
+    <button>Submit</button>
+  </form>
+  <fa-icon [icon]="dogIcon" class="icon"></fa-icon>
+</div>

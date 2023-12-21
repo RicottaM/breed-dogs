@@ -1,0 +1,30 @@
+### Testy dla endpointów związanych z rasami psów ###
+
+### Stwórz nową rasę psa
+POST http://localhost:8081/breeds
+Content-Type: application/json
+
+{
+  "name": "Mops",
+  "averageAge": 12
+}
+
+### Pobierz wszystkie rasy psów
+GET http://localhost:8081/breeds
+
+### Pobierz rasę psa po ID
+GET http://localhost:8081/breeds/9203278a-e447-4af5-82e7-668c2c942ffa
+
+
+### Usuń rasę psa po ID
+DELETE http://localhost:8081/breeds/9203278a-e447-4af5-82e7-668c2c942ffa
+
+### Aktualizuj rasę psa po ID
+PUT http://localhost:8081/breeds/3
+Content-Type: application/json
+
+{
+  "name": "Nowa nazwa rasy",
+  "averageAge": 15
+}
+

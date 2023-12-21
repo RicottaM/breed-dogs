@@ -1,0 +1,33 @@
+.breed-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 25px;
+  row-gap: 25px;
+}
+
+.breed {
+  text-align: center;
+  font-size: 20px;
+  background-color: #dfd3c3;
+  border: 2px solid #232323;
+  padding-bottom: 5%;
+}
+
+.icon {
+  color: #232323;
+  font-size: 32px;
+  padding: 2%;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  color: #232323;
+}

@@ -1,0 +1,8 @@
+<div class="form-container" *ngIf="dog && breedName">
+  <form [formGroup]="applyForm" (submit)="submitForm()">
+    <h2>Dog edit</h2>
+    <input id="name" type="text" formControlName="name" placeholder="{{ dog.name }}" autocomplete="off" />
+    <input id="age" type="text" formControlName="age" placeholder="{{ dog.age }}" autocomplete="off" />
+    <button>Submit</button>
+  </form>
+</div>

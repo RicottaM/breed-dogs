@@ -1,0 +1,35 @@
+.error-container {
+  background-color: #dfd3c3;
+  border-top: 2px solid #232323;
+  border-right: 2px solid #232323;
+  border-bottom: 2px solid #232323;
+  bottom: 50%;
+  width: 20%;
+  position: sticky;
+  padding: 0px 35px 15px 27px;
+  animation: slideInFromLeft 0.5s ease-out;
+  z-index: 1;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+
+p {
+  font-size: 24px;
+  margin-left: 4%;
+  color: rgb(208, 76, 76);
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

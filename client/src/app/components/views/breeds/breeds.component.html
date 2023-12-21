@@ -1,0 +1,7 @@
+<div class="container">
+  <app-nav></app-nav>
+  <app-container-title text="Breed collection"></app-container-title>
+  <app-breed-form (errorMessagesChange)="onErrorMessagesChange($event)"></app-breed-form>
+  <app-breed-section></app-breed-section>
+  <app-error-display [messages]="errorMessages"></app-error-display>
+</div>

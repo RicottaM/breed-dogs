@@ -1,0 +1,7 @@
+<div class="container">
+  <app-nav></app-nav>
+  <app-container-title text="Dog collection"></app-container-title>
+  <app-dog-form (errorMessagesChange)="onErrorMessagesChange($event)"></app-dog-form>
+  <app-dog-section></app-dog-section>
+  <app-error-display [messages]="errorMessages"></app-error-display>
+</div>

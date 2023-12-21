@@ -1,0 +1,27 @@
+### Stwórz nowego psa - Pies 1
+POST http://localhost:8082/dogs
+Content-Type: application/json
+
+{
+  "name": "Burek",
+  "age": 2,
+  "breed": "541dbc0d-f092-4b6a-b288-1fa085e9dc41"
+}
+
+### Pobierz wszystkie psy
+GET http://localhost:8082/dogs
+
+### Pobierz psa po ID
+GET http://localhost:8082/dogs/8467cd1d-d4e7-4a6b-9c9c-b8be2e142216
+
+### Usuń psa po ID
+DELETE http://localhost:8082/dogs/220cb2b3-e97c-4eeb-b93b-ac83e06c4883
+
+### Aktualizuj psa po ID
+PUT http://localhost:8082/dogs/2
+Content-Type: application/json
+
+{
+  "name": "Nowe imie",
+  "age": 3
+}

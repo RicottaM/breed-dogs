@@ -1,0 +1,11 @@
+<div class="dog-container">
+  <div *ngFor="let dog of dogs" class="dog">
+    <p>
+      <b>{{ dog.name }}</b>
+    </p>
+    <p>Age: {{ dog.age }}</p>
+    <fa-icon [routerLink]="['/dog-details', dog.id]" [icon]="detailsIcon" class="icon"></fa-icon>
+    <fa-icon [routerLink]="['/dog-edit', dog.id]" [icon]="editIcon" class="icon"></fa-icon>
+    <fa-icon [icon]="trashIcon" class="icon" (click)="deleteDog(dog.id)"></fa-icon>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="form-container">
+  <form [formGroup]="applyForm" (submit)="submitForm()">
+    <p>Add new Breed to the collection!</p>
+    <input id="name" type="text" formControlName="name" placeholder="Name" autocomplete="off" />
+    <input id="averageAge" type="text" formControlName="averageAge" placeholder="Average age" autocomplete="off" />
+    <button>Submit</button>
+  </form>
+  <fa-icon [icon]="pawIcon" class="icon"></fa-icon>
+</div>

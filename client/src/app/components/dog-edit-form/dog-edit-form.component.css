@@ -1,0 +1,95 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-top: 2px solid #232323;
+  border-bottom: 2px solid #232323;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300;
+  padding-bottom: 2%;
+}
+
+p {
+  font-size: 28px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #987554;
+}
+
+form {
+  border: 2px solid #232323;
+  background-color: #dfd3c3;
+  padding-bottom: 24px;
+  width: 100%;
+  line-height: 1.5;
+  text-align: center;
+}
+
+input {
+  margin-left: 25%;
+  display: block;
+  font-size: 26px;
+  margin-bottom: 6%;
+  width: 50%;
+  color: #232323;
+  background-color: #dfd3c3;
+  border: none;
+  border-bottom: 2px solid #232323;
+  outline: none;
+  letter-spacing: 2px;
+  padding: 1% 0% 1% 0%;
+  transition: 0.5s;
+}
+
+input::placeholder {
+  color: #232323;
+  border: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 22px;
+  border-bottom: 2px solid #987554;
+  color: #987554;
+  transition: 0.5s;
+}
+
+input:focus::placeholder {
+  color: #987554;
+  transition: 0.5s;
+}
+
+button {
+  font-size: 26px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding: 2% 4% 2% 4%;
+  background-color: #dfd3c3;
+  color: #232323;
+  border: none;
+  border-bottom: 2px solid #232323;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #232323;
+  color: #dfd3c3;
+  transition: 0.3s;
+}
+
+.icon {
+  align-self: center;
+  text-align: center;
+  width: 50%;
+  font-size: 12vw;
+}

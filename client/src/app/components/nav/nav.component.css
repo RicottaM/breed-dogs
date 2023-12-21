@@ -1,0 +1,86 @@
+nav {
+  background-color: #dfd3c3;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  color: #232323;
+  border-bottom: 2px solid #232323;
+  top: 0px !important;
+}
+
+a:visited {
+  color: #232323;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #232323;
+  color: #dfd3c3;
+}
+
+.icon {
+  font-size: 30px;
+  align-self: center;
+
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.migration-button {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.migration-button ul {
+  display: none;
+  list-style: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
+.migration-button:hover {
+  background-color: #232323;
+  color: #dfd3c3;
+}
+
+.migration-button:hover ul {
+  display: block;
+  background-color: #232323;
+}
+
+.migration-button li {
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  border-top: 2px solid #c7b198;
+}
+
+.migration-button li:hover {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #c7b198;
+}

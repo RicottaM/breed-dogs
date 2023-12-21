@@ -1,0 +1,28 @@
+.dog-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+}
+
+.dog {
+  text-align: center;
+  font-size: 20px;
+  background-color: #dfd3c3;
+  border: 2px solid #232323;
+  padding-bottom: 5%;
+}
+
+.icon {
+  font-size: 32px;
+  padding: 2%;
+  color: #232323;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

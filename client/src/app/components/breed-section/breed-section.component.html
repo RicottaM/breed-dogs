@@ -1,0 +1,11 @@
+<div class="breed-container">
+  <div *ngFor="let breed of breeds" class="breed">
+    <p>
+      <b>{{ breed.name }}</b>
+    </p>
+    <p>Average age: {{ breed.averageAge }}</p>
+    <fa-icon [icon]="detailsIcon" [routerLink]="['/breed-details', breed.id]" class="icon"></fa-icon>
+    <fa-icon [icon]="editIcon" [routerLink]="['/breed-edit', breed.id]" class="icon"></fa-icon>
+    <a><fa-icon [icon]="trashIcon" class="icon" (click)="deleteBreed(breed.id)"></fa-icon></a>
+  </div>
+</div>
